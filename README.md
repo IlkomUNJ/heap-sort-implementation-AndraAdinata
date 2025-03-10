@@ -1,11 +1,67 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/NqT6D9pg)
-# Manual
-1. We are giving starter codes for Vala. But if you used different language, feel free to override the whole repository.
-2. When you accept the invite link, a separate fork repo will be created in your github space.
-3. Clone the forked repo to your local computer
-4. Create a readme which state your identity and add instruction in how to compile and run your program
-5. Replace any sources with your codes manually by copy paste from your sources
-6. Make commit and push to your repo
-7. That's it, any commit you made will get notified in the master repo. Please do not make a pull request to the master.
+# Proyek Max Heapify C++
 
-Apologize for the delay, it's relatively hard to setup initial github classroom since the repo need to be configured in strictly specific condition.
+### Identitas
+
+- **Nama**: Andra Achmaddinata
+- **NIM**: 1313623033
+- **Program Studi**: Ilmu Komputer A
+- **Mata Kuliah**: Desain dan Analisis Algoritma
+
+### Deskripsi
+Berikut adalah implementasi struktur data Max Heap menggunakan C++. Max Heap merupakan salah satu jenis heap di mana setiap elemen induk selalu lebih besar dari elemen anak-anaknya.
+---
+
+### Prerequisite
+- `Meson` dan `Ninja` untuk sistem build.
+- Compiler dari `build-essential`.
+
+---
+
+### Cara Instalasi dan Kompilasi
+
+1. **Clone Repository**
+
+   ```bash
+   git clone https://github.com/IlkomUNJ/heap-sort-implementation-AndraAdinata.git
+   cd heap-sort-implementation-AndraAdinata
+   ```
+
+2. **Install Dependencies**
+
+   Di Ubuntu/Debian:
+
+   ```bash
+   sudo apt update
+   sudo apt install build-essential meson ninja-build
+   ```
+
+3. **Kompilasi Program**
+
+   ```bash
+   meson setup build
+   meson compile -C build
+   ```
+
+4. **Jalankan Program**
+
+   ```bash
+   g++ -o program main.cpp max_heap.cpp
+   ./program
+   ```
+
+---
+
+### Struktur Direktori
+
+```
+heap-sort-implementation-mfaathirarsa/
+│
+├── src/                # Kode sumber
+│   ├── maxheap.cpp     # Implementasi MaxHeap
+│   ├── max_heap.h       # Header MaxHeap
+│   └── main.cpp        # Program utama
+│
+└── build/              # Hasil kompilasi
+```
+
+---
